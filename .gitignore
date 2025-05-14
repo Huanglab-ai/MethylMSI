@@ -1,0 +1,14 @@
+# Ignore system generated files
+.DS_Store  # macOS file
+Thumbs.db  # Windows file
+
+# Ignore Python related files
+__pycache__/  # Python cache directory
+
+# Ignore log and temporary files
+*.log
+*.tmp
+
+# Ignore build output files
+main.dist/
+main.build/
