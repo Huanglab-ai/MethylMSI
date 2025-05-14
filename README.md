@@ -18,6 +18,7 @@ A Python Tkinter-based GUI tool for:
 - nuitka (only for packaging)
 
 ## Structure
+'''
 MethylMSI/
 ├─README.md    # Help documentation
 │
@@ -49,6 +50,7 @@ MethylMSI/
             ├─svm_model_coad.pkl
             ├─svm_model_stad.pkl
             └─svm_model_ucec.pkl
+'''
 
 ## Installation
 1. Double-click the release/setup.exe file and follow the prompts of the installation wizard.
