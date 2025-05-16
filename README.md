@@ -21,35 +21,26 @@ A Python Tkinter-based GUI tool for:
 ```
 MethylMSI/
 ├─README.md    # Help documentation
-│
-├─models    # Directory for model training 
-│  ├─saved
-│  │      ├─svm_model_coad.pkl
-│  │      ├─svm_model_stad.pkl
-│  │      └─svm_model_ucec.pkl
-│  │      
-│  └─train    # Model training scripts
-│          └─main.py   
 │          
-├─release
+├─release    # Distribution package directory
 │      └─setup.exe    # Packaged installation program
 │      
 └─scripts    # Directory for original code
-    │  ├─feature_utils.py
-    │  ├─gui_utils.py
-    │  ├─main.py    # Main Python script
-    │  └─model_utils.py
+    │  ├─feature_utils.py    # Feature engineering utilities: Data preprocessing and feature selection
+    │  ├─gui_utils.py    # GUI utilities: Building visual interfaces
+    │  ├─main.py    # Main program entry: Integrates data loading, model prediction, and result output
+    │  └─model_utils.py    # Model utilities: Wrapper for model loading and prediction
     │  
-    ├─data
-    │      ├─example.csv
-    │      ├─feature_names_coad.csv
-    │      ├─feature_names_stad.csv
-    │      └─feature_names_ucec.csv
+    ├─data    # Example data and feature name files
+    │      ├─example.csv    # Sample input data file (DNA methylation data format example)
+    │      ├─feature_names_coad.csv    # Feature names for COAD dataset (used for feature matching)
+    │      ├─feature_names_stad.csv    # Feature names for STAD dataset
+    │      └─feature_names_ucec.csv    # Feature names for UCEC dataset
     │      
-    └─model
-            ├─svm_model_coad.pkl
-            ├─svm_model_stad.pkl
-            └─svm_model_ucec.pkl
+    └─model    # Runtime model directory
+            ├─svm_model_coad.pkl    # COAD model identical to models
+            ├─svm_model_stad.pkl    # STAD model identical to models
+            └─svm_model_ucec.pkl    # UCEC model identical to models
 ```
 
 ## Installation
@@ -67,6 +58,11 @@ MethylMSI/
 2. Select a prediction mode (coad/stad/ucec)
 3. (Optional) Download example file (e.g., example.csv)
 4. Click "Run Prediction" to see results
+
+## Compatibility
+- Development Environment: Windows 10/11 (64-bit)
+- Native Support: Windows systems (.exe file requires direct execution on Windows)
+- Other Systems: Not officially supported on macOS/Linux. For non-Windows users, consider using the original code.
 
 ## Contacts
 For support, contact:
